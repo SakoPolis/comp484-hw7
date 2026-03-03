@@ -41,14 +41,31 @@ body {
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 
-/* html {
-  box-sizing: border-box;
+html {
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
-} */
+    box-sizing: inherit;
+}
 
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
 
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Clear floats between jobs */
+.job-item {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
 
 
 h1 {
@@ -114,6 +131,13 @@ header, footer {
     text-align: center;
 }
 
+/* Remove bullets and default padding for header link list */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 header h1 {
     color: #38BDF8;
 }
@@ -134,7 +158,6 @@ a:hover {
 .profile-img {
     width: 300px;
     border-radius: 50%;
-    float: left;
     margin-right: 30px;
 }
 header h1, header h2 {
